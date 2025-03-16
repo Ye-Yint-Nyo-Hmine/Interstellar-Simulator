@@ -8,14 +8,15 @@
 ## Table of Contents
 1. [Overview](#overview)
 2. [Features](#features)
-3. [Dependencies](#dependencies)
-4. [Usage](#usage)
+3. [Demos](#demos)
+4. [Dependencies](#dependencies)
+5. [Usage](#usage)
    - [Running the Simulator](#running-the-simulator)
    - [Example Usage](#example-usage)
    - [Controls](#controls)
-5. [Main Functions](#main-functions)
-6. [Science](#science)
-7. [License](#license)]
+6. [Main Functions](#main-functions)
+7. [Science](#science)
+8. [License](#license)]
 9. [Contribution](#contribution)
 
 ## Overview
@@ -34,6 +35,26 @@ Intersetellar Simulator is an intuitive and one of the first python 3D interstel
 - [x] Supports orbital mechanics and multi-body interactions  
 - [x] Efficient computation using NumPy for performance optimization  
 - [x] Visual rendering powered by Pygame  
+
+## Demos
+<p align="center">
+    <video width="320" height="240" controls>
+        <source src="https://github.com/Ye-Yint-Nyo-Hmine/Interstellar-Simulator/blob/main/logos/Orbit.mp4?raw=true" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+    <video width="320" height="240" controls>
+        <source src="https://github.com/Ye-Yint-Nyo-Hmine/Interstellar-Simulator/blob/main/logos/asteroids.mp4?raw=true" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+    <video width="320" height="240" controls>
+        <source src="https://github.com/Ye-Yint-Nyo-Hmine/Interstellar-Simulator/blob/main/logos/sun_planets_moons.mp4?raw=true" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</p>
+
+
 
 ## Dependencies
 This program requires the following Python libraries:
