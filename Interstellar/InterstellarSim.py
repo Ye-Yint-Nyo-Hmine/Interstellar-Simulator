@@ -6,6 +6,8 @@ from Interstellar.gravity import calculate_gravity
 import sys
 
 
+pygame.font.init()
+
 # Set up the window
 WIDTH, HEIGHT, LENGTH = 1000, 800, 1000 # *Note: Length is defined to be used for 3D
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
@@ -17,6 +19,7 @@ FPS = 60
 deltaTime = 1e-20 # appropriate time for dt
 particles = [] # stores matter inside
 field = -1 # set render of field to True
+hide_ui = -1
 
 
 def add_particle(x, y, z, mass, radius=None, vx=0, vy=0, vz=0, color=(255, 255, 255)):
@@ -150,6 +153,21 @@ def draw_matters():
         else:
             pygame.draw.circle(WIN, particle.color, ((particle.pos[0]), particle.pos[1]), particle.radius)
 
+
+
+def display_ui():
+        
+    # Set up font
+    font = pygame.font.SysFont("Helvetica", 15)
+
+    # Define text
+    deltaTime_text = font.render(f"Time Step (dt): {deltaTime:.2e}", True, (150, 255, 255))
+    field_text = font.render(f"Einstein field: {bool(field+1)}", True, (150, 255, 255))
+    
+    WIN.blit(deltaTime_text, (10, 10))
+    WIN.blit(field_text, (10, 30))
+
+
 def update_win():
     """
     Description:
@@ -161,6 +179,8 @@ def update_win():
     
     update_particles()
     draw_matters()
+    if hide_ui == -1:
+        display_ui()
     
     
     
@@ -172,10 +192,11 @@ def runner(field_toggle=False):
     Main function that runs the simulation
     
     """
-    global deltaTime, particles, field
+    global deltaTime, particles, field, hide_ui
     run = True
     clock = pygame.time.Clock()
-    cd = 0
+    cd_0 = 0
+    cd_1 = 0
     
     if field_toggle:
         field = 1
@@ -189,27 +210,29 @@ def runner(field_toggle=False):
                 break
         if keys[pygame.K_a]:
             deltaTime *= 1/2
-            print(deltaTime)
         if keys[pygame.K_d]:  
             deltaTime *= 1.5
-            print("DT: ", deltaTime)
         if keys[pygame.K_r]:  
             deltaTime = 1e-15
             particles = []
         if keys[pygame.K_t]:  
             init_particles(10)
-            print("Num particles: ", len(particles))
         if keys[pygame.K_f]:
-            if cd == 0:
-                print("Field: ", field)
+            if cd_0 == 0:
                 field *= -1
-                cd = 10
+                cd_0 = 10
+        if keys[pygame.K_u]:
+            if cd_1 == 0:
+                hide_ui *= -1
+                cd_1 = 10
         
         
         update_win()
         clock.tick(FPS)
-        if cd > 0:
-            cd -= 1
+        if cd_0 > 0:
+            cd_0 -= 1
+        if cd_1 > 0:
+            cd_1 -= 1
         pygame.display.update()
 
 
