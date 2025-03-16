@@ -10,7 +10,7 @@ def calculate_gravity(particles):
     """
     
     import numpy as np
-    from stellar.universal_constants import G
+    from Interstellar.universal_constants import G
     positions = np.array([p.pos for p in particles])  # Shape (len(particles), 3)
     masses = np.array([p.mass for p in particles])  # Shape (len(particles),)
     forces = np.zeros_like(positions)  # Initialize forces array (same shape as positions)

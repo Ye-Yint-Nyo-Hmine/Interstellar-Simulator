@@ -1,14 +1,16 @@
 import numpy as np
 import pygame
 import random
-from stellar.matter import Particle
-from stellar.gravity import calculate_gravity
+from Interstellar.matter import Particle
+from Interstellar.gravity import calculate_gravity
 import sys
 
 
 # Set up the window
 WIDTH, HEIGHT, LENGTH = 1000, 800, 1000 # *Note: Length is defined to be used for 3D
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
+pygame.display.set_caption("Interstellar Simulator")
+print("For updates: visit [https://github.com/Ye-Yint-Nyo-Hmine/Interstellar-Simulator]")
 FPS = 60
 
 # physics sets

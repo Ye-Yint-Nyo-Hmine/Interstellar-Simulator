@@ -12,7 +12,7 @@ class Particle:
         Create a scientifically accurate particle
         
         """
-        from stellar.universal_constants import G, c
+        from Interstellar.universal_constants import G, c
         import numpy as np
         
         self.pos = np.array([x, y, z], dtype=float)
