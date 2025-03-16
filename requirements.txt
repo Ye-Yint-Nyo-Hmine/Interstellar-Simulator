@@ -1,0 +1,4 @@
+# Libraries needed
+
+numpy
+pygame
