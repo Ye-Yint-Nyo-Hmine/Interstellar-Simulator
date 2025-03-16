@@ -37,18 +37,20 @@ Intersetellar Simulator is an intuitive and one of the first python 3D interstel
 - [x] Visual rendering powered by Pygame  
 
 ## Demos
-<p align="center">
+
+<p>
     <video width="320" height="240" controls>
         <source src="https://github.com/Ye-Yint-Nyo-Hmine/Interstellar-Simulator/blob/main/logos/Orbit.mp4?raw=true" type="video/mp4">
         Your browser does not support the video tag.
     </video>
     
-    <video width="320" height="240" controls>
+
+<video width="320" height="240" controls>
         <source src="https://github.com/Ye-Yint-Nyo-Hmine/Interstellar-Simulator/blob/main/logos/asteroids.mp4?raw=true" type="video/mp4">
         Your browser does not support the video tag.
     </video>
     
-    <video width="320" height="240" controls>
+<video width="320" height="240" controls>
         <source src="https://github.com/Ye-Yint-Nyo-Hmine/Interstellar-Simulator/blob/main/logos/sun_planets_moons.mp4?raw=true" type="video/mp4">
         Your browser does not support the video tag.
     </video>
