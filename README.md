@@ -1,10 +1,9 @@
 
-
+# ***Interstellar Simulator***
 <p align="center">
     <a><img src="https://github.com/Ye-Yint-Nyo-Hmine/Interstellar-Simulator/blob/main/logos/logo.png?raw=true" alt="Logo" width="400" height="400" style="border-radius: 35px;"></a>
 </p>
 
-# ***Interstellar Simulator***
 
 ## Table of Contents
 1. [Overview](#overview)
