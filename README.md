@@ -1,7 +1,8 @@
-<p align="center">
-    <a><img src="https://github.com/Ye-Yint-Nyo-Hmine/Interstellar-Simulator/blob/main/logos/logo.png?raw=true" alt="Logo"></a> 
-</p>
 
+
+<p align="center">
+    <a><img src="https://github.com/Ye-Yint-Nyo-Hmine/Interstellar-Simulator/blob/main/logos/logo.png?raw=true" alt="Logo" width="200" height="200"></a>
+</p>
 
 # ***Interstellar Simulator***
 
